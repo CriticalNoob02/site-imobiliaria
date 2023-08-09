@@ -13,17 +13,7 @@ export default function Navbar () {
             </div>
             <div className="basis-2/3">
                 <div>
-                    <h1>
-                        <a href="#">
-                            Title 1
-                        </a>
-                    </h1>
-
-                    <h1>
-                        <a href="#">
-                            Title 2
-                        </a>
-                    </h1>
+                  {Array.map}
                 </div>
             </div>
         </div>
