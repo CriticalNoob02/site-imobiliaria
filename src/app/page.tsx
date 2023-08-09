@@ -1,6 +1,13 @@
+import Image from "../../node_modules/next/image"
+import pic from "../../public/pic.jpg"
+
 export default function Home() {
   return (
-    <main className="flex w-screen min-h-screen flex-col items-center ">
+    <main>
+      <Image
+      src={pic}
+      alt='Foto'
+      />
     </main>
   )
 }
