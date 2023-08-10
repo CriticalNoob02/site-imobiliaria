@@ -1,5 +1,7 @@
+import { randomUUID } from "crypto"
 import Image from "../../../../node_modules/next/image"
 import logo from "../../../../public/pic.jpg"
+import NavItens from "./navItens/NavItens"
 
 export default function Navbar () {
     return(
@@ -12,8 +14,12 @@ export default function Navbar () {
                 />
             </div>
             <div className="basis-2/3">
-                <div>
-                  {Array.map}
+                <div className="w-full h-full">
+                  <NavItens data={{
+                        titles: ["Ab","aee","eef"],
+                        links: ["#12","#15","#20"],
+                        uuid: [randomUUID(), randomUUID(), randomUUID()]
+                    }}/>
                 </div>
             </div>
         </div>
