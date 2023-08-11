@@ -6,15 +6,18 @@ import MenuToogle from "./menuToogle/MenuToogle"
 export default function Navbar () {
     const title = [
         'AAA',
-        'BBB',
-        'CCC'
+        'Banana',
+        'CCC',
+        'Jabiraca',
     ]
     const link = [
         '#AAA',
         '#BBB',
-        '#CCC'
+        '#CCC',
+        '#AAcc'
     ]
     const uuids = [
+        randomUUID(),
         randomUUID(),
         randomUUID(),
         randomUUID()
