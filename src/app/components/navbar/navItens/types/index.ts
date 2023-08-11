@@ -1,8 +1,8 @@
 /**
  * @param titles Titulo do item;
- * @param links Link de referencia;
+ * @param links  <?> Link de referencia;
  * @param uuid Key, usar a função "randomUUID";
- * @param status
+ * @param status <?> Status do elemento pai;
  */
 export default interface NavItensProps {
     data:{
