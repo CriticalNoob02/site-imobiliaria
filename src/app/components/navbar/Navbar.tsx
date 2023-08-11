@@ -1,6 +1,6 @@
 import { randomUUID } from "crypto"
 import Image from "../../../../node_modules/next/image"
-import logo from "../../../../public/pic.jpg"
+import logo from "../../../../public/logo.png"
 import MenuToogle from "./menuToogle/MenuToogle"
 
 export default function Navbar () {
@@ -21,11 +21,11 @@ export default function Navbar () {
     ]
 
     return(
-        <div className="w-screen h-28 flex justify-around fixed p-2 drop-shadow-xl backdrop-blur-sm bg-red-200/60">
+        <div className="w-screen h-28 flex justify-around fixed p-2 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
             <div className="basis-1/3 overflow-hidden">
                 <Image
                 src={logo}
-                height={110}
+                height={95}
                 alt='logo da empresa'
                 />
             </div>
