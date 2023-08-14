@@ -24,7 +24,7 @@ export default function Navbar () {
     ]
 
     return(
-        <div className="w-screen h-28 flex justify-around fixed p-2 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
+        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
             <div className="basis-1/3 overflow-hidden">
                 <Image
                 src={logo}
