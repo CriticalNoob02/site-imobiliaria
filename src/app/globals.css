@@ -14,3 +14,9 @@
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42
 }
+
+.card{
+    background-image: url('../../public/pic.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
