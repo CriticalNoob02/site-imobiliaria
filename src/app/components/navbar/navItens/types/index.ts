@@ -11,4 +11,5 @@ export default interface NavItensProps {
         uuid:Array<string>
     }
     status?: boolean
+    color: string
 }
