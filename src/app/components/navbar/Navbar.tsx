@@ -1,7 +1,12 @@
-import { randomUUID } from "crypto"
+'use client'
+
+import { useState } from "react"
+import { BsWhatsapp } from "react-icons/bs";
 import Image from "../../../../node_modules/next/image"
 import logo from "../../../../public/logo.png"
-import MenuToogle from "./menuToogle/MenuToogle"
+import ButtonContact from "./buttonContact/ButtonContact"
+import ButtonMenu from "./buttonMenu/ButtonMenu"
+import MenuDropdown from "./menuDropdown/MenuDropdown"
 
 export default function Navbar () {
     const title = [
@@ -16,25 +21,43 @@ export default function Navbar () {
         '#CCC',
         '#AAcc'
     ]
-    const uuids = [
-        randomUUID(),
-        randomUUID(),
-        randomUUID(),
-        randomUUID()
-    ]
+    const buttonTitle = "Contato"
+    const buttonLink = "https://api.whatsapp.com/send?phone=5548991539040&text=Ol%C3%A1,%20estou%20visitando%20o%20site,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es"
 
+    const [menuStats, setMenuStats] = useState(true)
+
+    const ToogleMode = () => {
+        setMenuStats(!menuStats)
+    }
     return(
-        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 px-20 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
-            <div className="basis-1/3 overflow-hidden">
+        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 px-28 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
+            <div className="basis-1/5 overflow-hidden">
                 <Image
                 src={logo}
                 height={95}
                 alt='logo da empresa'
                 />
             </div>
-            <div className="basis-2/3">
-                <div className="w-full h-full">
-                    <MenuToogle title={title} link={link} uuids={uuids}/>
+            <div className="basis-4/5">
+                <div className="w-full h-full flex items-center justify-end">
+                    <ButtonContact 
+                    link={buttonLink} 
+                    title={buttonTitle}
+                    icon={<BsWhatsapp/>}
+                    />
+                    <ButtonMenu 
+                    status={menuStats} 
+                    click={<input type="checkbox" className="hidden" onClick={ToogleMode}></input>}
+                    />
+                    <div className={`${menuStats ? "invisible opacity-0 top-10" : "visible opacity-100 top-20"} transition-all absolute right-auto`}>
+                        <MenuDropdown
+                        data={{
+                            titles: title,
+                            links: link,
+                        }}
+                        color='bg-red-700/70'
+                        />
+                    </div>
                 </div>
             </div>
         </div>
