@@ -47,7 +47,7 @@ export default function Navbar () {
                     />
                     <ButtonMenu 
                     status={menuStats} 
-                    click={<input type="checkbox" className="hidden" onClick={ToogleMode}></input>}
+                    onClick={ToogleMode}
                     />
                     <div className={`${menuStats ? "invisible opacity-0 top-10" : "visible opacity-100 top-20"} transition-all absolute right-auto`}>
                         <MenuDropdown
