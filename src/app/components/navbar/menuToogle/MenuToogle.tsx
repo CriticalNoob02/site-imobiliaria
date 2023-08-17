@@ -3,7 +3,7 @@
 import ButtonMenu from "../buttonMenu/ButtonMenu";
 import { BsWhatsapp } from "react-icons/bs";
 import MenuToogleProps from "./types/index"
-import NavItens from "../navItens/NavItens"
+import NavItens from "../menuDropdown/NavItens"
 import ButtonContact from "../buttonContact/ButtonContact"
 import { useState } from "react"
 
