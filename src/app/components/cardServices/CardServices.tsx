@@ -3,7 +3,7 @@ import Gradient from "./gradient/Gradient"
 
 export default function CardServices() {
     return(
-        <div className="w-screen h-[90vh] flex items-center bg-slate-100 justify-center">
+        <div className="w-screen h-[90vh] flex items-center justify-evenly bg-slate-100">
             <Card3d color="bg-red-800">
                 <div className="h-full w-full rounded bg-ImgCard1 bg-center bg-no-repeat relative flex items-end justify-center transition group-hover:grayscale">
                     <h1 className="my-5 text-3xl tracking-wide font-bold text-slate-50 transition drop-shadow-md shadow-red-800 z-20">
