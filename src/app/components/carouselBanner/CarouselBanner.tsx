@@ -31,7 +31,7 @@ export default function  CarouselBanner () {
     const links = ["#Apartamento","#Casa","#Terreno","#Sobrado"]
 
     return(
-        <div className={`w-screen h-screen ${'card'+count} transition-all`}>
+        <div id="Home" className={`w-screen h-screen ${'card'+count} transition-all`}>
             <Glass>
                 <CardBanner size="w-3/5 h-2/5">
                     <div className={`w-screen h-screen ${'card'+count} transition-all flex items-center flex-col justify-center `}>
