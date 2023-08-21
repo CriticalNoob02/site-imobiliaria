@@ -7,7 +7,7 @@ import { randomUUID } from "crypto"
     } 
 
     return ( 
-        <div className="w-full h-full flex flex-col mt-14 text-center">
+        <div className="w-full h-full flex flex-col mt-14 text-center scroll-smooth">
             {data.titles.map((title, i) => (
                 <a key={uuid} href={data.links ?data.links[i]: '#'}>
                     <div className={`rounded drop-shadow-xl backdrop-blur-sm ${color} mb-10 py-3 px-5 hover:scale-110 transition ease-in-out delay-150`}>
