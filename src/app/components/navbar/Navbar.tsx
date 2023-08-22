@@ -10,14 +10,14 @@ import MenuDropdown from "./menuDropdown/MenuDropdown"
 
 export default function Navbar () {
     const title = [
-        'AAA',
-        'Banana',
+        'Home',
+        'Serviços',
         'CCC',
         'Jabiraca',
     ]
     const link = [
-        '#AAA',
-        '#BBB',
+        '#Home',
+        '#Services',
         '#CCC',
         '#AAcc'
     ]
@@ -30,7 +30,7 @@ export default function Navbar () {
         setMenuStats(!menuStats)
     }
     return(
-        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 px-28 drop-shadow-xl backdrop-blur-sm bg-red-200/20">
+        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 px-28 drop-shadow-xl backdrop-blur-sm bg-white/20">
             <div className="basis-1/5 overflow-hidden">
                 <Image
                 src={logo}
@@ -55,7 +55,7 @@ export default function Navbar () {
                             titles: title,
                             links: link,
                         }}
-                        color='bg-red-700/70'
+                        color='bg-red-800/70'
                         />
                     </div>
                 </div>
