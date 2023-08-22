@@ -35,8 +35,8 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.texture {
-    background-image: url('../../public/texture.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+.card3D:hover{
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
