@@ -5,4 +5,5 @@
 export default interface Card3dProps{
     children: React.ReactNode
     color: string
+    onClick?: () => void
 }
