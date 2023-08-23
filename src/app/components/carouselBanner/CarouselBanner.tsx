@@ -35,12 +35,10 @@ export default function CarouselBanner() {
       <Glass>
         <CardBanner size="w-3/5 h-2/5">
           <div
-            className={`h-screen w-screen ${
-              'card' + count
-            } flex flex-col items-center justify-center transition-all `}
+            className={`h-screen w-screen ${'card' + count} flex flex-col items-center justify-center transition-all`}
           >
             <h1 className="my-5 mr-40 select-none text-start text-2xl font-light text-stone-300">
-              Venha conquistar seu{' '}
+              Venha conquistar seu
             </h1>
             <TextLink title={titles[count]} link={links[count]} />
             <h1 className="my-5 ml-40 select-none text-end text-2xl font-light text-stone-300">

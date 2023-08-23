@@ -17,22 +17,22 @@
 }
 
 .card0 {
-  background-image: url('../../public/pic.jpg');
+  background-image: url('../../public/apartament.jpeg');
   background-position: center;
   background-repeat: no-repeat;
 }
 .card1 {
-  background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Gaming-Wallpaper-4k-HD-Wallpaper-Free-download.jpg');
+  background-image: url('../../public/house.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
 .card2 {
-  background-image: url('https://images.hdqwalls.com/download/astronaut-space-4k-k7-1920x1080.jpg');
+  background-image: url('../../public/terreno.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
 .card3 {
-  background-image: url('https://pixewall.com/wp-content/uploads/2023/03/4k-Cityscape-Desktop-Wallpaper-1536x864.png');
+  background-image: url('../../public/sobrado.jpg');
   background-position: center;
   background-repeat: no-repeat;
 }
