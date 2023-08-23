@@ -1,5 +1,6 @@
 'use client';
 
+import Row from '../layout/row/Row';
 import { useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import Image from '../../../../node_modules/next/image';

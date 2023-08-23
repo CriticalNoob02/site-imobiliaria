@@ -4,7 +4,7 @@ export default function Row ({
   children,
   width = 'w-screen',
   height = 'h-screen',
-  color = "bg-slate-50"
+  color = "bg-slate-100"
 }:RowProps) {
   return(
     <div className={`${width} ${height} ${color} flex justify-evenly items-center flex-row`}>
