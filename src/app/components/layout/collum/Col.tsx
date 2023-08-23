@@ -8,7 +8,7 @@ export default function Col ({
   color = "bg-slate-100",
 }:ColProps) {
   return(
-    <div id={id ?? ''} className={`${width} ${height} ${color} flex justify-center items-center flex-col text-center`}>
+    <div id={id ?? ''} className={`${width} ${height} ${color} flex justify-center items-center flex-col text-center py-5`}>
       {children}
     </div>
   )
