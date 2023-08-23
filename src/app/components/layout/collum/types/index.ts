@@ -9,4 +9,5 @@ export default interface ColProps {
   width?: string;
   height?: string;
   color?: string;
+  id?: string
 }

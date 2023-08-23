@@ -7,7 +7,7 @@ export default function Row ({
   color = "bg-slate-50"
 }:RowProps) {
   return(
-    <div className={`${width} ${height} ${color} flex justify-center items-center flex-row`}>
+    <div className={`${width} ${height} ${color} flex justify-evenly items-center flex-row`}>
       {children}
     </div>
   )
