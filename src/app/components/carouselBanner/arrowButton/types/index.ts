@@ -5,6 +5,6 @@
  */
 export default interface ArrowButtonProps {
     color?: string
-    onClick?: () => void;
+    onClick?: () => void
     size: string
 }
