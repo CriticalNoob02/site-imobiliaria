@@ -1,15 +1,10 @@
 import MenuDropdownProps from './types/index';
-import { randomUUID } from 'crypto';
 
 export default function MenuDropdown({ data, color }: MenuDropdownProps) {
-  const uuid = () => {
-    return randomUUID();
-  };
-
   return (
     <div className="mt-14 flex h-full w-full flex-col scroll-smooth text-center">
       {data.titles.map((title, i) => (
-        <a key={uuid} href={data.links ? data.links[i] : '#'}>
+        <a key={title} href={data.links ? data.links[i] : '#'}>
           <div
             className={`rounded drop-shadow-xl backdrop-blur-sm ${color} mb-10 px-5 py-3 transition delay-150 ease-in-out hover:scale-110`}
           >
