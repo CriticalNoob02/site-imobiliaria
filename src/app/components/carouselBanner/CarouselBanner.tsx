@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ArrowButton from './arrowButton/ArrowButton';
 import Glass from './glass/Glass';
 import CardBanner from './cardBanner/CardBanner';
@@ -9,20 +9,25 @@ import TextLink from './textLink/TextLink';
 export default function CarouselBanner() {
   const [count, setCount] = useState(0);
 
-  const SumCount = () => {
+  const increment = () => {
     if (count == 3) {
       setCount(0);
     } else {
       setCount(count + 1);
     }
   };
-  const LessCount = () => {
+  const decrement = () => {
     if (count == 0) {
       setCount(3);
     } else {
       setCount(count - 1);
     }
   };
+
+  useEffect(() => {
+    const timer = setTimeout(() => increment(), 4000);
+    return () => clearTimeout(timer);
+  }, [count,4]);
 
   const titles = ['Apartamento', 'Casa', 'Terreno', 'Sobrado'];
   const links = ['#Apartamento', '#Casa', '#Terreno', '#Sobrado'];
@@ -46,10 +51,10 @@ export default function CarouselBanner() {
             </h1>
           </div>
           <div className="text-cente absolute right-0 z-20 px-10">
-            <ArrowButton size="text-5xl" onClick={SumCount} />
+            <ArrowButton size="text-5xl" onClick={increment} />
           </div>
           <div className="text-cente absolute left-0 z-20 -scale-x-100 px-10">
-            <ArrowButton size="text-5xl" onClick={LessCount} />
+            <ArrowButton size="text-5xl" onClick={decrement} />
           </div>
           <div className="absolute left-0 z-10 h-screen w-28 bg-gradient-to-r from-black/70 px-10"></div>
           <div className="absolute right-0 z-10 h-screen w-28 bg-gradient-to-l from-black/70 px-10"></div>
