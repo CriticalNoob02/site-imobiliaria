@@ -1,3 +1,3 @@
 export default interface IconContainerProps {
-    children: React.ReactNode
+  children: React.ReactNode;
 }

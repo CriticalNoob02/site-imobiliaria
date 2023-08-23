@@ -4,7 +4,7 @@
  * @param size tamanho do botão
  */
 export default interface ArrowButtonProps {
-    color?: string
-    onClick?: () => void
-    size: string
+  color?: string;
+  onClick?: () => void;
+  size: string;
 }

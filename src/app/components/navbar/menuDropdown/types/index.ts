@@ -5,10 +5,10 @@
  * @param color <?> Background color para os itens;
  */
 export default interface MenuDropdownProps {
-    data: {
-        titles: Array<string>
-        links?: Array<string>
-    }
-    status?: boolean
-    color: string
+  data: {
+    titles: Array<string>;
+    links?: Array<string>;
+  };
+  status?: boolean;
+  color: string;
 }

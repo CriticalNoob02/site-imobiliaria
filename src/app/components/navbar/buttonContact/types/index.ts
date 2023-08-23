@@ -4,7 +4,7 @@
  * @param icon Icone para o botão
  */
 export default interface ButtonContactProps {
-    link: string
-    title: string
-    icon?: React.ReactNode
+  link: string;
+  title: string;
+  icon?: React.ReactNode;
 }
