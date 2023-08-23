@@ -8,13 +8,13 @@ export default function ArrowButton({
 }: ArrowButtonProps) {
     return (
         <div
-            className={`w-full h-full ${size} ${
+            className={`h-full w-full ${size} ${
                 color ?? 'text-slate-100'
             } cursor-pointer select-none drop-shadow-lg`}
         >
             <HiOutlineArrowCircleRight
                 onClick={onClick}
-                className="transition ease-in-out delay-150 hover:scale-110"
+                className="transition delay-150 ease-in-out hover:scale-110"
             />
         </div>
     )

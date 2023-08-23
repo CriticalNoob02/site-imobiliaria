@@ -30,31 +30,31 @@ export default function CarouselBanner() {
     return (
         <div
             id="Home"
-            className={`w-screen h-screen ${'card' + count} transition-all`}
+            className={`h-screen w-screen ${'card' + count} transition-all`}
         >
             <Glass>
                 <CardBanner size="w-3/5 h-2/5">
                     <div
-                        className={`w-screen h-screen ${
+                        className={`h-screen w-screen ${
                             'card' + count
-                        } transition-all flex items-center flex-col justify-center `}
+                        } flex flex-col items-center justify-center transition-all `}
                     >
-                        <h1 className="text-start font-light text-2xl my-5 mr-40 text-stone-300 select-none">
+                        <h1 className="my-5 mr-40 select-none text-start text-2xl font-light text-stone-300">
                             Venha conquistar seu{' '}
                         </h1>
                         <TextLink title={titles[count]} link={links[count]} />
-                        <h1 className="text-end font-light text-2xl my-5 ml-40 text-stone-300 select-none">
+                        <h1 className="my-5 ml-40 select-none text-end text-2xl font-light text-stone-300">
                             com a gente!
                         </h1>
                     </div>
-                    <div className="text-cente absolute right-0 px-10 z-20">
+                    <div className="text-cente absolute right-0 z-20 px-10">
                         <ArrowButton size="text-5xl" onClick={SumCount} />
                     </div>
-                    <div className="text-cente absolute left-0 px-10 -scale-x-100 z-20">
+                    <div className="text-cente absolute left-0 z-20 -scale-x-100 px-10">
                         <ArrowButton size="text-5xl" onClick={LessCount} />
                     </div>
-                    <div className="h-screen w-28 absolute left-0 px-10 bg-gradient-to-r from-black/70 z-10"></div>
-                    <div className="h-screen w-28 absolute right-0 px-10 bg-gradient-to-l from-black/70 z-10"></div>
+                    <div className="absolute left-0 z-10 h-screen w-28 bg-gradient-to-r from-black/70 px-10"></div>
+                    <div className="absolute right-0 z-10 h-screen w-28 bg-gradient-to-l from-black/70 px-10"></div>
                 </CardBanner>
             </Glass>
         </div>

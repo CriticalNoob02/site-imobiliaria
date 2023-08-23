@@ -21,12 +21,12 @@ export default function Navbar() {
         setMenuStats(!menuStats)
     }
     return (
-        <div className="z-40 w-screen h-28 flex justify-around fixed p-2 px-28 drop-shadow-xl backdrop-blur-sm bg-white/20">
+        <div className="fixed z-40 flex h-28 w-screen justify-around bg-white/20 p-2 px-28 drop-shadow-xl backdrop-blur-sm">
             <div className="basis-1/5 overflow-hidden">
                 <Image src={logo} height={95} alt="logo da empresa" />
             </div>
             <div className="basis-4/5">
-                <div className="w-full h-full flex items-center justify-end">
+                <div className="flex h-full w-full items-center justify-end">
                     <ButtonContact
                         link={buttonLink}
                         title={buttonTitle}
@@ -36,9 +36,9 @@ export default function Navbar() {
                     <div
                         className={`${
                             menuStats
-                                ? 'invisible opacity-0 top-10'
-                                : 'visible opacity-100 top-20'
-                        } transition-all absolute right-auto`}
+                                ? 'invisible top-10 opacity-0'
+                                : 'visible top-20 opacity-100'
+                        } absolute right-auto transition-all`}
                     >
                         <MenuDropdown
                             data={{
