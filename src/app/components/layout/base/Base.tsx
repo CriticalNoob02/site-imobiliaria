@@ -1,4 +1,4 @@
-import BaseProps from './types/BaseProps';
+import BaseProps from './types';
 
 export default function Base({ children }: BaseProps) {
   return (
