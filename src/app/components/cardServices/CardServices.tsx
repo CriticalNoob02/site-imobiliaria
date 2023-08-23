@@ -14,7 +14,7 @@ export default function CardServices() {
 
   return (
     <Col id='Services' height='h-[95vh]'>
-      <div className='my-16'>
+      <div>
         <Title
         title={tag}
         />
