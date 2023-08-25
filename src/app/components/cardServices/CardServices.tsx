@@ -26,7 +26,7 @@ export default function CardServices() {
             color="bg-red-800"
             >
             <div className="relative flex h-full w-full flex-col items-center rounded transition">
-              <IconContainer>
+              <IconContainer hover='group-hover:scale-110 group-hover:drop-shadow-lg'>
                 {createElement(icons[i])}
               </IconContainer>
               <h1 className="z-20 m-4 select-none text-2xl font-semibold tracking-wide text-slate-50 drop-shadow-md transition">

@@ -25,7 +25,7 @@ export default function PostLayout ({
             </div>
             <div className="w-full h-1/5 border-t-4 border-slate-50 p-2 flex items-center justify-between flex-row">
                 <div className="h-full w-2/5 flex justify-evenly">
-                    <IconContainer size="text-4xl">
+                    <IconContainer size="text-4xl" hover="hover:text-red-500 hover:drop-shadow-md">
                         <PiHeart/>
                     </IconContainer>
                     <IconContainer size="text-4xl">
@@ -36,7 +36,7 @@ export default function PostLayout ({
                     </IconContainer>
                 </div>
                 <div className=" h-full w-1/5 flex justify-center items-center">
-                    <IconContainer size="text-4xl">
+                    <IconContainer size="text-4xl" hover="hover:text-yellow-500 hover:drop-shadow-md">
                         <PiBookmarkSimple/>
                     </IconContainer>
                 </div>
