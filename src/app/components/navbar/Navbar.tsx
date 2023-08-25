@@ -10,8 +10,8 @@ import ButtonMenu from './buttonMenu/ButtonMenu';
 import MenuDropdown from './menuDropdown/MenuDropdown';
 
 export default function Navbar() {
-    const title = ['Home', 'Serviços', 'CCC', 'Jabiraca'];
-    const link = ['#Home', '#Services', '#CCC', '#AAcc'];
+    const title = ['Home', 'Serviços', 'Avaliações', 'Jabiraca'];
+    const link = ['#Home', '#Services', '#Reviews', '#AAcc'];
     const buttonTitle = 'Contato';
     const buttonLink =
     'https://api.whatsapp.com/send?phone=5548991539040&text=Ol%C3%A1,%20estou%20visitando%20o%20site,%20gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es';
