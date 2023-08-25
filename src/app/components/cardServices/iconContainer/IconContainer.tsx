@@ -1,8 +1,8 @@
 import IconContainerProps from './types';
 
-export default function IconContainer({ children, size }: IconContainerProps) {
+export default function IconContainer({ children, size, hover }: IconContainerProps) {
     return(
-        <div className={`grow ${size ?? 'text-[10rem]'} text-slate-50 transition group-hover:scale-110 group-hover:drop-shadow-lg flex justify-center items-center`}>
+        <div className={`grow ${size ?? 'text-[10rem]'} ${hover ?? ''} text-slate-50 transition flex justify-center items-center`}>
             {children}
         </div>
     )
