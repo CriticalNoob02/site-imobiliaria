@@ -9,13 +9,13 @@ export default function PostLayout ({
     posts
 }:PostLayoutProps) {
     return(
-        <div className="w-1/4 h-full rounded-3xl border-4 border-slate-50 overflow-hidden">
+        <div className="w-full h-full rounded-3xl border-4 border-slate-50 overflow-hidden">
             <div className="w-full h-1/5 border-b-4 border-slate-50 p-2 flex items-center flex-row">
-                <div className="h-12 w-12 mx-5 ">
+                <div className="h-12 w-12 mx-5 select-none">
                     {avatar}
                 </div>
                 <div className="h-full flex items-center justify-start">
-                    <h1 className="text-slate-50 text-2xl font-light">
+                    <h1 className="text-slate-50 text-2xl font-light select-none">
                         {username}
                     </h1>
                 </div>
