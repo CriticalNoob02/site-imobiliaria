@@ -7,8 +7,8 @@ import { StaticImageData } from "next/image";
  * @param rating componente de exibição da nota;
  */
 export default interface ReviewCardProps {
-  name: string;
-  img: string | StaticImageData;
-  comment: string;
-  rating: React.ReactNode;
+  name: Array<string>;
+  img: Array<string | StaticImageData>;
+  comment: Array<string>;
+  rating: Array<React.ReactNode>;
 }

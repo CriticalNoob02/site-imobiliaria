@@ -20,10 +20,11 @@ export default function Review () {
     const images = [logo,asd,zzx]
     const time = '10s'
 
-    const name = 'Adriel taradinho!'
-    const userAvatar = asd
-    const comment = 'fgndjngnfgfngngdfngngjfgfigfgn'
-    const rating = <StarBar rate={4} size={""}/>
+    const name = ['Adriel taradinho!', 'Crinha aleatório']
+    const userAvatar = [asd, zzx]
+    const comment = ['fgndjngnfgfngngdfngngjfgfigfgn', 'o outro cara disse tudo!']
+    // eslint-disable-next-line react/jsx-key
+    const rating = [<StarBar rate={4} size={""}/>, <StarBar rate={2} size={""}/>]
 
     return(
         <Col id="Reviews" height="v-auto">
