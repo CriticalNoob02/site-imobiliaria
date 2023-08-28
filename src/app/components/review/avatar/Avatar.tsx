@@ -4,7 +4,7 @@ import AvatarProps from "./types";
 
 export default function Avatar ({image, color}:AvatarProps) {
     return(
-        <div className={`w-full h-full rounded-full ${color ?? 'border-slate-50'} bg-slate-50 flex items-center justify-center`}>
+        <div className={`w-full h-full rounded-full ${color ?? 'border-slate-50'} bg-slate-50 flex items-center justify-center overflow-hidden`}>
             <Image
                 src={image}
                 alt={"Avatar"}
