@@ -1,0 +1,14 @@
+import { StaticImageData } from "next/image";
+
+/**
+ * @param name user do avaliador;
+ * @param img imagem do avaliador;
+ * @param comment comentario do avaliador;
+ * @param rating componente de exibição da nota;
+ */
+export default interface ReviewCardProps {
+  name: string;
+  img: string | StaticImageData;
+  comment: string;
+  rating: React.ReactNode;
+}
