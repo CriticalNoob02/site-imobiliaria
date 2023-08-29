@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import ReviewCardProps from "./types"
-import Avatar from "../avatar/Avatar"
+import Avatar from "../../postsInstagram/avatar/Avatar"
 import ArrowButton from "../../carouselBanner/arrowButton/ArrowButton"
 
 
