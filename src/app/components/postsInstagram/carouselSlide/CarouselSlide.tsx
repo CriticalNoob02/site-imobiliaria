@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function CarouselSlide ({images,timer}:CarouselSlideProps) {
     return(
         <div className={`h-full flex flex-row items-center justify-start flex-nowrap animate-[slides_20s_linear_infinite] select-none`}>
-            {images.map((image,i) => (
+            {images.map((image) => (
                 <div key={image.toString()} className="w-full h-full shrink-0">
                     <Image
                         src={image}
