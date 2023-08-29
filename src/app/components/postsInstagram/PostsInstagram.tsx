@@ -1,8 +1,6 @@
-import Row from "../layout/row/Row";
-import IconContainer from "../cardServices/iconContainer/IconContainer";
-import Avatar from "./avatar/Avatar";
-import CarouselSlide from "./carouselSlide/CarouselSlide";
+import { Avatar, IconContainer, Row } from "../atoms";
 import { PiQuotes } from "react-icons/pi";
+import CarouselSlide from "./carouselSlide/CarouselSlide";
 import PostLayout from "./postLayout/PostLayout";
 
 import logo from "../../../../public/logo.png"

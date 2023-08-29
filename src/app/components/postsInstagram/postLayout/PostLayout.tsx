@@ -1,5 +1,5 @@
 import PostLayoutProps from "./types"
-import IconContainer from "../../cardServices/iconContainer/IconContainer"
+import IconContainer from "../../atoms/iconContainer/IconContainer"
 import { PiHeart, PiChatCircle, PiNavigationArrow, PiBookmarkSimple } from "react-icons/pi"
 
 

@@ -1,10 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import ArrowButton from './arrowButton/ArrowButton';
-import Glass from './glass/Glass';
+import { useState, useEffect,  } from 'react';
+import { Glass, ArrowButton, TextLink } from '../atoms';
 import CardBanner from './cardBanner/CardBanner';
-import TextLink from './textLink/TextLink';
+
 
 export default function CarouselBanner() {
     const [count, setCount] = useState(0);

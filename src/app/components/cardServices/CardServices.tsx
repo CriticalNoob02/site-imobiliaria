@@ -1,8 +1,5 @@
-import Row from '../layout/row/Row';
-import Col from '../layout/collum/Col';
 import Card3d from './card3D/Card3D';
-import IconContainer from './iconContainer/IconContainer';
-import Title from './title/Title';
+import { IconContainer, Title, Row, Col } from '../atoms';
 import { PiHandshake, PiKey, PiHouse } from 'react-icons/pi';
 import { createElement } from 'react';
 

@@ -1,13 +1,11 @@
 'use client';
 
-import Row from '../layout/row/Row';
 import { useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import Image from '../../../../node_modules/next/image';
 import logo from '../../../../public/logo.png';
 import ButtonContact from './buttonContact/ButtonContact';
-import ButtonMenu from './buttonMenu/ButtonMenu';
-import MenuDropdown from './menuDropdown/MenuDropdown';
+import { MenuDropdown, ButtonMenu } from '../atoms';
 
 export default function Navbar() {
     const title = ['Home', 'Serviços', 'Avaliações', 'Jabiraca'];

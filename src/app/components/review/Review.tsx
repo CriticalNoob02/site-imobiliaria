@@ -1,4 +1,4 @@
-import Col from "../layout/collum/Col"
+import Col from "../atoms/collum/Col"
 import ReviewCard from "./reviewCard/ReviewCard"
 import StarBar from "./startBar/StarBar"
 

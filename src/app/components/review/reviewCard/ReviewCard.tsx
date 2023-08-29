@@ -2,8 +2,8 @@
 
 import { useState } from "react"
 import ReviewCardProps from "./types"
-import Avatar from "../../postsInstagram/avatar/Avatar"
-import ArrowButton from "../../carouselBanner/arrowButton/ArrowButton"
+import Avatar from "../../atoms/avatar/Avatar"
+import ArrowButton from "../../atoms/arrowButton/ArrowButton"
 
 
 export default function ReviewCard({name, img, comment, rating}:ReviewCardProps) {
