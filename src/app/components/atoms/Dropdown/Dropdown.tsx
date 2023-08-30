@@ -1,6 +1,9 @@
-import MenuDropdownProps from './types/index';
+import DropdownProps from './types/index';
 
-export default function MenuDropdown({ data, color }: MenuDropdownProps) {
+export default function Dropdown({
+    data,
+    color
+}:DropdownProps) {
     return (
         <div className="mt-14 flex h-full w-full flex-col scroll-smooth text-center">
             {data.titles.map((title, i) => (

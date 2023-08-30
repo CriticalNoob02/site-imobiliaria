@@ -4,7 +4,7 @@
  * @param status <?> Status do elemento pai;
  * @param color <?> Background color para os itens;
  */
-export default interface MenuDropdownProps {
+export default interface DropdownProps {
   data: {
     titles: Array<string>;
     links?: Array<string>;
