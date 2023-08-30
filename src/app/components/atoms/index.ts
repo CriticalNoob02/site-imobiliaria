@@ -5,12 +5,13 @@ import Col from "./collum/Col";
 import Row from "./row/Row";
 import Base from "./base/Base";
 import ButtonMenu from "./buttonMenu/ButtonMenu";
-import Dropdown from "./Dropdown/Dropdown";
+import Dropdown from "./dropdown/Dropdown";
 import IconContainer from "./iconContainer/IconContainer";
 import Title from "./title/Title";
 import ArrowButton from "./arrowButton/ArrowButton";
 import TextLink from "./textLink/TextLink";
 import Card3d from "./card3D/Card3D";
+import ButtonContact from "./buttonContact/ButtonContact";
 
 export {
     Avatar,
@@ -20,6 +21,7 @@ export {
     Row,
     Base,
     ButtonMenu,
+    ButtonContact,
     Dropdown,
     IconContainer,
     Title,
