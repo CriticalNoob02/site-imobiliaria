@@ -10,6 +10,7 @@ import IconContainer from "./iconContainer/IconContainer";
 import Title from "./title/Title";
 import ArrowButton from "./arrowButton/ArrowButton";
 import TextLink from "./textLink/TextLink";
+import Card3d from "./card3D/Card3D";
 
 export {
     Avatar,
@@ -24,4 +25,5 @@ export {
     Title,
     ArrowButton,
     TextLink,
+    Card3d,
 }
