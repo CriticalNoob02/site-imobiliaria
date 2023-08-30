@@ -1,5 +1,4 @@
-import Card3d from './card3D/Card3D';
-import { IconContainer, Title, Row, Col } from '../atoms';
+import { IconContainer, Title, Row, Col, Card3d } from '../atoms';
 import { PiHandshake, PiKey, PiHouse } from 'react-icons/pi';
 import { createElement } from 'react';
 
@@ -16,7 +15,7 @@ export default function CardServices() {
                     title={tag}
                 />
             </div>
-            <Row width='w-full' height='h-full'>
+            <Row height='h-full'>
                 {titles.map((title, i) => (
                     <Card3d
                         key={title}

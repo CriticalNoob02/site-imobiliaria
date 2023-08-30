@@ -5,7 +5,7 @@ import Col from "./collum/Col";
 import Row from "./row/Row";
 import Base from "./base/Base";
 import ButtonMenu from "./buttonMenu/ButtonMenu";
-import MenuDropdown from "./menuDropdown/MenuDropdown";
+import Dropdown from "./Dropdown/Dropdown";
 import IconContainer from "./iconContainer/IconContainer";
 import Title from "./title/Title";
 import ArrowButton from "./arrowButton/ArrowButton";
@@ -20,7 +20,7 @@ export {
     Row,
     Base,
     ButtonMenu,
-    MenuDropdown,
+    Dropdown,
     IconContainer,
     Title,
     ArrowButton,
