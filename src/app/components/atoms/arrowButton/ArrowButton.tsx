@@ -1,6 +1,12 @@
 import ArrowButtonProps from './types';
 import { PiArrowCircleRightLight } from 'react-icons/pi';
 
+/**
+ * Icone de seta clicavel
+ * @param color Usar cor de texto;
+ * @param onClick Função de clique;
+ * @param size User tamanho de fonte;
+ */
 export default function ArrowButton({
     color,
     onClick,
