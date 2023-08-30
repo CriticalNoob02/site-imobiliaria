@@ -1,10 +1,18 @@
 import RowProps from "./types";
 
+/**
+ * Componente de layout para descrever uma linha;
+ * @param children
+ * @param padding
+ * @param width
+ * @param height
+ * @param color
+ */
 export default function Row ({
     children,
+    padding,
     width = 'w-screen',
     height = 'h-screen',
-    padding,
     color = "bg-slate-100",
     ...rest
 }:RowProps) {
