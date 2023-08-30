@@ -1,5 +1,10 @@
 import ButtonMenuProps from './types';
 
+/**
+ * Icone de botão Hamburguer;
+ * @param status Passar State do botão;
+ * @param onCLick Evento de click; 
+ */
 export default function ButtonMenu({ status, onClick }: ButtonMenuProps) {
     return (
         <label className="cursor-pointer">
