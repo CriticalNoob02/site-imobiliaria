@@ -1,6 +1,5 @@
-import Col from "../atoms/collum/Col"
-import ReviewCard from "./reviewCard/ReviewCard"
-import StarBar from "./startBar/StarBar"
+import { StarBar, Col, Row } from "../atoms"
+import { ReviewCarousel } from "../molecules"
 
 import asd from "../../../../public/house.jpg"
 import zzx from "../../../../public/sobrado.jpg"
@@ -14,13 +13,10 @@ export default function Review () {
     const rating = [<StarBar rate={4} size={""}/>, <StarBar rate={2} size={""}/>]
 
     return(
-        <Col id="Reviews" width="w-screen" height="h-[70vh]">
-
-            <ReviewCard
-                name={name}
-                img={userAvatar}
-                comment={comment}
-                rating={rating} />
-        </Col>
+        <ReviewCarousel
+            names={name}
+            imgs={userAvatar}
+            comments={comment}
+            ratings={rating} />
     )
 }
