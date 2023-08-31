@@ -12,6 +12,7 @@ import ArrowButton from "./arrowButton/ArrowButton";
 import TextLink from "./textLink/TextLink";
 import Card3d from "./card3D/Card3D";
 import ButtonContact from "./buttonContact/ButtonContact";
+import StarBar from "./startBar/StarBar";
 
 export {
     Avatar,
@@ -28,4 +29,5 @@ export {
     ArrowButton,
     TextLink,
     Card3d,
+    StarBar,
 }
