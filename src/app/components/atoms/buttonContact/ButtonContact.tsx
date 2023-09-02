@@ -11,9 +11,14 @@ export default function ButtonContact({
     children,
     color
 }: ButtonContactProps) {
+    // Use a interpolação de classes do Tailwind CSS
+    const bgColor = `bg-${color}-600`;
+    const hoverBgColor = `hover:bg-${color}-500`;
+    const hoverShadowColor = `hover:shadow-${color}-600/50`;
+
     return (
         <div className="px-8">
-            <button className={`flex select-none items-center justify-center rounded bg-${color}-600 p-3 transition hover:-translate-y-0.5 hover:bg-${color}-500 hover:shadow-lg hover:shadow-${color}-600/50`}>
+            <button className={`flex select-none items-center justify-center rounded ${bgColor} p-3 transition hover:-translate-y-0.5 ${hoverBgColor} ${hoverShadowColor}`}>
                 {children}
             </button>
         </div>

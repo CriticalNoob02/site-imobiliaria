@@ -11,6 +11,7 @@ export default function ButtonZap ({link,title}:ButtonZapProps) {
                     <div className="px-2">
                         {title}
                     </div>
+                    <div className="bg-lime-600 hover:bg-lime-500 hover:shadow-lime-600/50"></div>
                 </ButtonContact>
             </a>
         </div>
