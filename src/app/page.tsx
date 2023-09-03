@@ -1,6 +1,6 @@
 import CarouselBanner from './components/carouselBanner/CarouselBanner';
 import PostsInstagram from './components/organisms/postsInstagram/PostsInstagram';
-import { Navbar, CardServices, ReviewCarousel } from './components/organisms';
+import { Navbar, CardServices, ReviewCarousel, Footer } from './components/organisms';
 import { StarBar } from "./components/atoms"
 import asd from "../../public/house.jpg"
 import zzx from "../../public/sobrado.jpg"
@@ -26,6 +26,7 @@ export default function Home() {
     const userLogo = logo
     const images = [logo,asd,zzx]
     const time = '10s'
+    //Footer
 
     return (
         <main>
@@ -34,7 +35,9 @@ export default function Home() {
             <CardServices titles={titles} icons={icons} tag={tag} />
             <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram userLogo={userLogo} images={images} time={time}/>
-            
+            <div className=''>
+            <Footer/>
+            </div>
         </main>
     );
 }
