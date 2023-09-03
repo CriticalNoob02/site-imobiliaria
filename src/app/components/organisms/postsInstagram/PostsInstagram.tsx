@@ -1,20 +1,14 @@
-import { Avatar, IconContainer, Row } from "../atoms";
+import { Avatar, IconContainer, Row, CarouselSlide } from "../../atoms";
+import { PostLayout } from "../../molecules";
 import { PiQuotes } from "react-icons/pi";
-import CarouselSlide from "./carouselSlide/CarouselSlide";
-import PostLayout from "./postLayout/PostLayout";
+import PostsInstagramProps from "./types";
 
-import logo from "../../../../public/logo.png"
-import asd from "../../../../public/apartament.jpeg"
-import zzx from "../../../../public/terreno.jpg"
-
-export default function PostsInstagram() {
-
-    const title = 'Avaliações'
-    const username = '@ChavesNovas'
-    const userLogo = <Avatar image={logo}/>
-    const images = [logo,asd,zzx]
-    const time = '10s'
-
+export default function PostsInstagram({
+    username = '@ChavesNovas',
+    userLogo, 
+    images, 
+    time
+}:PostsInstagramProps) {
     return(
         <Row height="h-[80vh]" color="bg-red-800" padding>
             <div className="w-2/6 h-full flex justify-center items-center text-slate-50 select-none">
@@ -29,7 +23,7 @@ export default function PostsInstagram() {
             </div>
             <div className="w-2/6 h-full p-8">
                 <PostLayout
-                    avatar={userLogo}
+                    avatar={<Avatar image={userLogo}/>}
                     username={username}
                     posts={<CarouselSlide images={images} timer={time} />}/>
             </div>
