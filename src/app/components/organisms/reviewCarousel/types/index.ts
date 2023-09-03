@@ -4,5 +4,5 @@ export default interface ReviewCarouselProps {
     names: Array<string>;
     imgs: Array<string | StaticImageData>;
     comments: Array<string>;
-    ratings: Array<React.ReactNode>;
+    ratings: Array<number>;
 }

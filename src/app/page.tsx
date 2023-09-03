@@ -21,7 +21,7 @@ export default function Home() {
     const name = ['Adriel taradinho!', 'Crinha aleatório']
     const userAvatar = [asd, zzx]
     const comment = ['fgndjngnfgfngngdfngngjfgfigfgn', 'o outro cara disse tudo!']
-    const rating = [<StarBar rate={4} size={""}/>, <StarBar rate={2} size={""}/>]
+    const rating = [5, 0]
     // PostInstagram
     const userLogo = logo
     const images = [logo,asd,zzx]
@@ -31,9 +31,10 @@ export default function Home() {
         <main>
             <Navbar titles={title} links={link} buttonTitle={buttonTitle} buttonLink={buttonLink} logo={logo}/>
             <CarouselBanner />
+            <CardServices titles={titles} icons={icons} tag={tag} />
             <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram userLogo={userLogo} images={images} time={time}/>
-            <CardServices titles={titles} icons={icons} tag={tag} />
+            
         </main>
     );
 }

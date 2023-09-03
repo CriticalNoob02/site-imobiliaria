@@ -1,5 +1,5 @@
 import ReviewCardProps from "./types"
-import Avatar from "../../atoms/avatar/Avatar"
+import { Avatar, StarBar } from "../../atoms"
 
 
 export default function ReviewCard({
@@ -28,7 +28,7 @@ export default function ReviewCard({
                         </p>
                     </div>
                     <div className="w-3/5 h-auto flex items-center justify-center select-none">
-                        {rating[i]}
+                        <StarBar rate={rating[i]} size={""}/>
                     </div>
                 </div>
             ))}

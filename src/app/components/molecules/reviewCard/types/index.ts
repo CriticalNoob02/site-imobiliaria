@@ -10,5 +10,5 @@ export default interface ReviewCardProps {
   name: Array<string>;
   img: Array<string | StaticImageData>;
   comment: Array<string>;
-  rating: Array<React.ReactNode>;
+  rating: Array<number>;
 }
