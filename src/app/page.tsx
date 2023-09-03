@@ -1,10 +1,10 @@
 import CarouselBanner from './components/carouselBanner/CarouselBanner';
-import Review from './components/review/Review';
 import PostsInstagram from './components/postsInstagram/PostsInstagram';
-import { Navbar, CardServices } from './components/organisms';
-
-
-import logo from '../../public/logo.png'
+import { Navbar, CardServices, ReviewCarousel } from './components/organisms';
+import { StarBar } from "./components/atoms"
+import asd from "../../public/house.jpg"
+import zzx from "../../public/sobrado.jpg"
+import logo from "../../public/logo.png"
 import { PiHandshake, PiKey, PiHouse } from 'react-icons/pi';
 
 export default function Home() {
@@ -17,13 +17,19 @@ export default function Home() {
     const titles = ['Quero fazer parte da equipe de corretores!','Quero comprar meu imovel novo com vocês!','Quero anunciar meu imovel com vocês!']
     const icons = [PiHandshake , PiKey, PiHouse]
     const tag = 'Serviços'
+    // ReviewCarousel
+    const name = ['Adriel taradinho!', 'Crinha aleatório']
+    const userAvatar = [asd, zzx]
+    const comment = ['fgndjngnfgfngngdfngngjfgfigfgn', 'o outro cara disse tudo!']
+    // eslint-disable-next-line react/jsx-key
+    const rating = [<StarBar rate={4} size={""}/>, <StarBar rate={2} size={""}/>]
 
     return (
         <main>
             <Navbar titles={title} links={link} buttonTitle={buttonTitle} buttonLink={buttonLink} logo={logo}/>
             <CarouselBanner />
             <CardServices titles={titles} icons={icons} tag={tag} />
-            <Review/>
+            <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram/>
         </main>
     );
