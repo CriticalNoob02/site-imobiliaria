@@ -2,8 +2,8 @@
 
 import ReviewCarouselProps from "./types";
 import { useState } from "react";
-import { ArrowButton, Col } from "../../atoms";
-import ReviewCard from "../reviewCard/ReviewCard";
+import { ArrowButton, Col, Title } from "../../atoms";
+import { ReviewCard } from "../../molecules";
 
 export default function ReviewCarousel({
     names, 
@@ -13,19 +13,21 @@ export default function ReviewCarousel({
 }:ReviewCarouselProps) {
 
     const [ count, setCount ] = useState(0)
-    const [ translate, setTranslate ] = useState(0)
 
     const increment = () => {
-        count == names.length ? null : setCount(+1);setTranslate(+100)
+        count == names.length ? null : setCount(+1)
     }
     const decrement = () => {
-        count == 0 ? null : setCount(+1);setTranslate(-100)
+        count == 0 ? null : setCount(-1)
     }
 
     return(
-        <Col id="Reviews" width="w-screen" height="h-[70vh]">
+        <Col width="w-screen" height="h-[70vh]">
+            <div id="Reviews">
+                <Title title={"Avaliações"}/>
+            </div>
             <div className="w-full h-full flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden">
-                <div className={`-translate-x-[${translate}%] transition`}>
+                <div className={`review${count} transition`}>
                     <ReviewCard 
                         name={names} 
                         img={imgs}
