@@ -41,3 +41,15 @@
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
 }
+.review0{
+  transform: translateX(0%);
+}
+.review1{
+  transform: translateX(-100%);
+}
+.review2{
+  transform: translateX(-200%);
+}
+.review3{
+  transform: translateX(-300%);
+}
