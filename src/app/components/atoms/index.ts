@@ -14,6 +14,7 @@ import Card3d from "./card3D/Card3D";
 import ButtonContact from "./buttonContact/ButtonContact";
 import StarBar from "./startBar/StarBar";
 import CarouselSlide from "./carouselSlide/CarouselSlide";
+import Selo from "./selo/Selo";
 
 export {
     Avatar,
@@ -32,4 +33,5 @@ export {
     Card3d,
     StarBar,
     CarouselSlide,
+    Selo,
 }
