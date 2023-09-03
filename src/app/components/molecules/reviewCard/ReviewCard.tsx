@@ -18,16 +18,16 @@ export default function ReviewCard({
                         <div className="h-20 w-20 mx-4">
                             <Avatar image={img[i]} />
                         </div>
-                        <div className="text-4xl mx-4 font-medium">
+                        <div className="text-4xl mx-4 font-medium select-none">
                             {n}
                         </div>
                     </div>
                     <div className="w-3/5 h-auto my-14 text-center">
-                        <p className="text-3xl font-extralight">
+                        <p className="text-3xl font-extralight select-none">
                             {comment[i]}
                         </p>
                     </div>
-                    <div className="w-3/5 h-auto flex items-center justify-center">
+                    <div className="w-3/5 h-auto flex items-center justify-center select-none">
                         {rating[i]}
                     </div>
                 </div>
