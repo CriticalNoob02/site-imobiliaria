@@ -13,6 +13,7 @@ import TextLink from "./textLink/TextLink";
 import Card3d from "./card3D/Card3D";
 import ButtonContact from "./buttonContact/ButtonContact";
 import StarBar from "./startBar/StarBar";
+import CarouselSlide from "./carouselSlide/CarouselSlide";
 
 export {
     Avatar,
@@ -30,4 +31,5 @@ export {
     TextLink,
     Card3d,
     StarBar,
+    CarouselSlide,
 }
