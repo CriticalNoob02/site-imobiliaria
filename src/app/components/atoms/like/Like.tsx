@@ -8,7 +8,7 @@ export default function Like ({
     size
 }:LikeProps) {
 
-    const [like, setLike] = useState(false)
+    const [like, setLike] = useState(true)
     const ToogleLike = () => {
         setLike(!like);
     };
