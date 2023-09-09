@@ -15,6 +15,7 @@ import ButtonContact from "./buttonContact/ButtonContact";
 import StarBar from "./startBar/StarBar";
 import CarouselSlide from "./carouselSlide/CarouselSlide";
 import Selo from "./selo/Selo";
+import Like from "./like/Like";
 
 export {
     Avatar,
@@ -34,4 +35,5 @@ export {
     StarBar,
     CarouselSlide,
     Selo,
+    Like,
 }

@@ -4,6 +4,7 @@ import Cards3D from "./cards3D/Cards3D";
 import ReviewCard from "./reviewCard/ReviewCard";
 import PostLayout from "./postLayout/PostLayout";
 import Contacts from "./contacts/Contacts"
+import CardsHover from "./cardsHover/CardsHover";
 
 export {
     MenuDropdown,
@@ -12,4 +13,5 @@ export {
     ReviewCard,
     PostLayout,
     Contacts,
+    CardsHover,
 }
