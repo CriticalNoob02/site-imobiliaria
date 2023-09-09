@@ -1,6 +1,6 @@
 import CarouselBanner from './components/carouselBanner/CarouselBanner';
 import PostsInstagram from './components/organisms/postsInstagram/PostsInstagram';
-import { Navbar, CardServices, ReviewCarousel, PropertiesCard } from './components/organisms';
+import { Navbar, CardServices, ReviewCarousel, PropertiesCard, Footer } from './components/organisms';
 import asd from "../../public/house.jpg"
 import zzx from "../../public/sobrado.jpg"
 import logo from "../../public/logo.png"
@@ -35,7 +35,7 @@ export default function Home() {
             <PropertiesCard/>
             <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram userLogo={userLogo} images={images} time={time}/>
-
+            <Footer/>
         </main>
     );
 }

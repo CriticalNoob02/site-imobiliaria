@@ -3,6 +3,7 @@ import CardServices from "./cardServices/CardServices";
 import ReviewCarousel from "./reviewCarousel/ReviewCarousel";
 import PostsInstagram from "./postsInstagram/PostsInstagram";
 import PropertiesCard from "./propertiesCard/PropertiesCard";
+import Footer from "./footer/Footer";
 
 export {
     Navbar,
@@ -10,4 +11,5 @@ export {
     ReviewCarousel,
     PostsInstagram,
     PropertiesCard,
+    Footer,
 }
