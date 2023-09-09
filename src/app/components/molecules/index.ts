@@ -5,6 +5,7 @@ import ReviewCard from "./reviewCard/ReviewCard";
 import PostLayout from "./postLayout/PostLayout";
 import Contacts from "./contacts/Contacts"
 import CardsHover from "./cardsHover/CardsHover";
+import SocialBox from "./socialBox/SocialBox";
 
 export {
     MenuDropdown,
@@ -14,4 +15,5 @@ export {
     PostLayout,
     Contacts,
     CardsHover,
+    SocialBox,
 }
