@@ -16,6 +16,7 @@ import StarBar from "./startBar/StarBar";
 import CarouselSlide from "./carouselSlide/CarouselSlide";
 import Selo from "./selo/Selo";
 import Like from "./like/Like";
+import ImobTopics from "./imobTopics/ImobTopics";
 
 export {
     Avatar,
@@ -36,4 +37,5 @@ export {
     CarouselSlide,
     Selo,
     Like,
+    ImobTopics,
 }
