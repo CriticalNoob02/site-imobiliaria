@@ -17,6 +17,7 @@ import CarouselSlide from "./carouselSlide/CarouselSlide";
 import Selo from "./selo/Selo";
 import Like from "./like/Like";
 import ImobTopics from "./imobTopics/ImobTopics";
+import CardHover from "./cardHover/CardHover";
 
 export {
     Avatar,
@@ -38,4 +39,5 @@ export {
     Selo,
     Like,
     ImobTopics,
+    CardHover,
 }
