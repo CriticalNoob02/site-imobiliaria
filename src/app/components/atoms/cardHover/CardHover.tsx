@@ -17,7 +17,7 @@ export default function CardHover({
             />
             <div className="w-full absolute p-3 bottom-0 flex flex-col items-end justify-center transition bg-gradient-to-t from-black/70 translate-y-14 hover:-translate-y-0">
                 <div className="w-full flex flex-row items-center justify-between py-2">
-                    <h1 className="text-xl text-slate-100 drop-shadow-md select-none">
+                    <h1 className="text-xl text-slate-100 font-semibold drop-shadow-md select-none">
                         {imageTitle}
                     </h1>
                     <div className="w-9 h-9 drop-shadow-md">
