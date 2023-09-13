@@ -22,11 +22,11 @@ export default function ReviewCarousel({
     }
 
     return(
-        <Col width="w-screen" height="h-[70vh]">
-            <div id="Reviews">
+        <Col width="w-screen" height="h-[75vh]">
+            <div id="Reviews" className="h-1/6">
                 <Title title={"Avaliações"}/>
             </div>
-            <div className={`w-full h-full flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden`}>
+            <div className={`w-full h-5/6 flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden`}>
                 <div className={`review${count} transition`}>
                     <ReviewCard
                         name={names}
