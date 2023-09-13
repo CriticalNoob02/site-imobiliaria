@@ -6,10 +6,10 @@ import { ArrowButton, Col, Title } from "../../atoms";
 import { ReviewCard } from "../../molecules";
 
 export default function ReviewCarousel({
-    names, 
-    imgs, 
-    comments, 
-    ratings 
+    names,
+    imgs,
+    comments,
+    ratings
 }:ReviewCarouselProps) {
 
     const [ count, setCount ] = useState(0)
@@ -26,12 +26,12 @@ export default function ReviewCarousel({
             <div id="Reviews">
                 <Title title={"Avaliações"}/>
             </div>
-            <div className="w-full h-full flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden">
+            <div className={`w-full h-full flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden`}>
                 <div className={`review${count} transition`}>
-                    <ReviewCard 
-                        name={names} 
+                    <ReviewCard
+                        name={names}
                         img={imgs}
-                        comment={comments} 
+                        comment={comments}
                         rating={ratings}
                     />
                 </div>
@@ -41,7 +41,7 @@ export default function ReviewCarousel({
                 <div className="text-cente absolute left-0 z-20 -scale-x-100 px-24">
                     <ArrowButton size="text-5xl" color="text-red-800" onClick={decrement}/>
                 </div>
-            </div> 
+            </div>
         </Col>
     )
 }
