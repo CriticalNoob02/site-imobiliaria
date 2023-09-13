@@ -17,10 +17,10 @@ export default function Footer() {
             <div className="h-full w-full flex flex-col items-center bg-red-700 rounded-t-[3rem] mt-10">
                 <div className="h-[80%] w-full flex flex-row justify-around">
                     <div className="h-full w-1/3">
-                        <Contacts 
-                        email={email} 
-                        localization={localization} 
-                        phone={phone}
+                        <Contacts
+                            email={email}
+                            localization={localization}
+                            phone={phone}
                         />
                     </div>
                     <div className="h-full w-1/3 flex flex-col items-end justify-center my-2">
@@ -28,9 +28,9 @@ export default function Footer() {
                             <SocialBox instagram={instagram} facebook={facebook}/>
                         </div>
                         <div className="w-full h-3/4 pl-28 pt-4 text-slate-100 flex flex-col items-end text-sm text-end font-extralight ">
-                                <h1 className="py-1"><b className="select-none">RAZÃO SOCIAL:</b> {razaoSocial}</h1>
-                                <h1 className="py-1"><b className="select-none">CRECI:</b> {creci}</h1>
-                                <h1 className="py-1"><b className="select-none">CNPJ:</b> {cnpj}</h1>
+                            <h1 className="py-1"><b className="select-none">RAZÃO SOCIAL:</b> {razaoSocial}</h1>
+                            <h1 className="py-1"><b className="select-none">CRECI:</b> {creci}</h1>
+                            <h1 className="py-1"><b className="select-none">CNPJ:</b> {cnpj}</h1>
                         </div>
                     </div>
                 </div>
