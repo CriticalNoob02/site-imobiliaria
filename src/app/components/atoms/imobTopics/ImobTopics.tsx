@@ -8,7 +8,7 @@ export default function ImobTopics({
     showers
 }:ImobTopicsProps) {
     return(
-        <div className="h-full w-full flex flex-row text-slate-100 font-light text-sm">
+        <div className="h-full w-full flex flex-row text-slate-100 font-light text-sm select-none">
             <div className="flex flex-row items-center justify-center mr-4">
                 <PiBedDuotone/>
                 <h1>&nbsp;{bedrooms}</h1>
