@@ -1,23 +1,36 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
-
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Col, Title, ArrowButton } from "../../atoms"
 import { CardsHover } from "../../molecules"
 import pics from "../../../../../public/sobrado.jpg"
 
 export default function PropertiesCard () {
 
-    const [ count, setCount ] = useState(0)
+    const cardsBox = useRef<HTMLDivElement>(null)
+    const boxcontainer = useRef<HTMLDivElement>(null)
 
+    const [ count, setCount ] = useState(0)
+    const [ width, setWidth ] = useState(0)
 
     const increment = () => {
-        //TODO ajustar para o tamanho da tela...
-        count == (images.length-3) ? null : setCount(count + 1);console.log(count)
+        if (boxcontainer.current) {
+            const boxWidth: number = boxcontainer.current.clientWidth;
+            width <= boxWidth ? null : setCount(count + 1)
+        }
     }
     const decrement = () => {
-        count == 0 ? null : setCount(count - 1);console.log(count)
+        count == 0 ? null : setCount(count - 1)
     }
+
+    useEffect(() => {
+        if (cardsBox.current) {
+            const cardsWidth: number = cardsBox.current.getBoundingClientRect().right
+            setWidth(cardsWidth)
+        }
+    }, [cardsBox,boxcontainer,increment,decrement])
+
 
     const images = [pics,pics,pics,pics,pics,pics]
     const titles = ['casa','abelha', 'casa','abelha','jonas','outro']
@@ -27,10 +40,10 @@ export default function PropertiesCard () {
     return(
         <Col height="h-[70vh]">
             <div className="w-full h-1/5">
-                <Title title="Lançamentos"/>
+                <Title title={width.toString()}/>
             </div>
-            <div className="w-full h-4/5 bg-red-800 flex flex-row items-center justify-start flex-nowrap shrink-0 overflow-hidden">
-                <div className={`transition select-none`} style={{transform: `translateX(-${25*count}rem)`}}>
+            <div className="w-screen h-4/5 bg-red-800 flex flex-row items-center justify-start flex-nowrap shrink-0 overflow-hidden" ref={boxcontainer}>
+                <div className={`transition select-none`} style={{transform: `translateX(-${25*count}rem)`}} ref={cardsBox}>
                     <CardsHover
                         images={images}
                         imageTitles={titles}
@@ -48,4 +61,3 @@ export default function PropertiesCard () {
         </Col>
     )
 }
-
