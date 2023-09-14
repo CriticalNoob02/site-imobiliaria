@@ -10,8 +10,10 @@ export default function PropertiesCard () {
 
     const [ count, setCount ] = useState(0)
 
+
     const increment = () => {
-        count == images.length ? null : setCount(count + 1);console.log(count)
+        //TODO ajustar para o tamanho da tela...
+        count == (images.length-3) ? null : setCount(count + 1);console.log(count)
     }
     const decrement = () => {
         count == 0 ? null : setCount(count - 1);console.log(count)
@@ -28,10 +30,7 @@ export default function PropertiesCard () {
                 <Title title="Lançamentos"/>
             </div>
             <div className="w-full h-4/5 bg-red-800 flex flex-row items-center justify-start flex-nowrap shrink-0 overflow-hidden">
-                <div className={`transition`}
-                    style={{
-                        transform: `translateX(-${24*count}rem)`
-                    }}>
+                <div className={`transition select-none`} style={{transform: `translateX(-${25*count}rem)`}}>
                     <CardsHover
                         images={images}
                         imageTitles={titles}
@@ -39,11 +38,11 @@ export default function PropertiesCard () {
                         imageTopics={topics}
                     />
                 </div>
-                <div className="text-cente absolute right-0 z-20 px-24">
-                    <ArrowButton size="text-5xl" color="text-red-800" onClick={increment}/>
+                <div className="text-cente absolute right-0 z-20 px-10">
+                    <ArrowButton size="text-5xl" color="text-slate-100" onClick={increment}/>
                 </div>
-                <div className="text-cente absolute left-0 z-20 -scale-x-100 px-24">
-                    <ArrowButton size="text-5xl" color="text-red-800" onClick={decrement}/>
+                <div className="text-cente absolute left-0 z-20 -scale-x-100 px-10">
+                    <ArrowButton size="text-5xl" color="text-slate-100" onClick={decrement}/>
                 </div>
             </div>
         </Col>
