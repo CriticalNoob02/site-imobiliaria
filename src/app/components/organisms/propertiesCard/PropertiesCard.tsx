@@ -1,42 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
-import { useState, useRef, useEffect } from "react"
-import { Col, Title, ArrowButton } from "../../atoms"
+import { useRef } from "react"
+import { Col, Title } from "../../atoms"
 import { CardsHover } from "../../molecules"
+import { motion } from "framer-motion"
 import pics from "../../../../../public/sobrado.jpg"
 
 export default function PropertiesCard () {
 
-    const cardsBox = useRef<HTMLDivElement>(null)
-    const boxcontainer = useRef<HTMLDivElement>(null)
-
-    const [ count, setCount ] = useState(0)
-    const [ width, setWidth ] = useState(0)
-
-    const increment = () => {
-        if (boxcontainer.current) {
-            const boxWidth: number = boxcontainer.current.clientWidth;
-            width <= boxWidth ? setCount(0) : setCount(count + 1)
-            if (count === images.length - 1) {
-                setCount(0)
-                setWidth(boxWidth)
-            } else {
-                setCount(count + 1)
-            }
-        }
-    }
-
-    const decrement = () => {
-        count == 0 ? null : setCount(count - 1)
-    }
-
-    useEffect(() => {
-        if (cardsBox.current) {
-            const cardsWidth: number = cardsBox.current.getBoundingClientRect().right
-            setWidth(cardsWidth)
-        }
-    }, [cardsBox,boxcontainer,increment,decrement])
+    const cardsBox = useRef<HTMLDivElement>(null);
 
 
     const images = [pics,pics,pics,pics,pics,pics]
@@ -45,25 +18,19 @@ export default function PropertiesCard () {
     const topics = [{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4}]
 
     return(
-        <Col height="h-[70vh]">
+        <Col height="h-[85vh]">
             <div className="w-full h-1/5">
-                <Title title={width.toString()}/>
+                <Title title={'Lançamentos'}/>
             </div>
-            <div className="w-screen h-4/5 bg-red-800 flex flex-row items-center justify-start flex-nowrap shrink-0 overflow-hidden" ref={boxcontainer}>
-                <div className={`transition select-none`} style={{transform: `translateX(-${25*count}rem)`}} ref={cardsBox}>
+            <div className="w-screen h-4/5 bg-red-800 flex flex-row items-center justify-start flex-nowrap shrink-0 overflow-hidden">
+                <motion.div ref={cardsBox} drag="x" dragConstraints={{right: 0, left: -cardsBox.current?.offsetWidth + window.innerWidth}} className="cursor-grab active:cursor-grabbing">
                     <CardsHover
                         images={images}
                         imageTitles={titles}
                         imageValues={values}
                         imageTopics={topics}
                     />
-                </div>
-                <div className="text-cente absolute right-0 z-20 px-10">
-                    <ArrowButton size="text-5xl" color="text-slate-100" onClick={increment}/>
-                </div>
-                <div className="text-cente absolute left-0 z-20 -scale-x-100 px-10">
-                    <ArrowButton size="text-5xl" color="text-slate-100" onClick={decrement}/>
-                </div>
+                </motion.div>
             </div>
         </Col>
     )
