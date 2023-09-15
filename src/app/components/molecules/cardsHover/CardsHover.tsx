@@ -11,7 +11,7 @@ export default function CardsHover({
     return (
         <div className="flex flex-row items-center flex-nowrap shrink-0">
             {images.map( (image, i) => (
-                <div className="w-80 h-96 mx-12" key={imageTitles[i]+i}>
+                <div className="w-80 h-96 mx-12 my-10" key={imageTitles[i]+i}>
                     <CardHover
                         image={image}
                         imageTitle={imageTitles[i]}
