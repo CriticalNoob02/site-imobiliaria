@@ -17,9 +17,16 @@ export default function PropertiesCard () {
     const increment = () => {
         if (boxcontainer.current) {
             const boxWidth: number = boxcontainer.current.clientWidth;
-            width <= boxWidth ? null : setCount(count + 1)
+            width <= boxWidth ? setCount(0) : setCount(count + 1)
+            if (count === images.length - 1) {
+                setCount(0)
+                setWidth(boxWidth)
+            } else {
+                setCount(count + 1)
+            }
         }
     }
+
     const decrement = () => {
         count == 0 ? null : setCount(count - 1)
     }
