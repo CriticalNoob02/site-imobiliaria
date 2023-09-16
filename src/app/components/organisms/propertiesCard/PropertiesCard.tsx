@@ -49,9 +49,6 @@ export default function PropertiesCard () {
                 <div className="absolute right-0 bottom-0  px-20 pb-10 text-slate-100 text-5xl">
                     <PiArrowFatLinesRight/>
                 </div>
-                <div className="absolute left-0 bottom-0 px-20 pb-10 text-slate-100 text-lg">
-                    <h1>Arraste para ver mais...</h1>
-                </div>
             </div>
         </Col>
     )
