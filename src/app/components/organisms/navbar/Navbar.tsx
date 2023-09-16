@@ -6,13 +6,15 @@ export default function Navbar({titles, links, buttonTitle, buttonLink, logo}:Na
     return (
         <div className="fixed z-40 flex h-20 w-screen justify-around bg-white/20 p-2 px-28 drop-shadow-xl backdrop-blur-sm">
             <div className="basis-1/5 overflow-hidden">
-                <Image
-                    src={logo}
-                    alt="Logo da Imobiliaria"
-                    style={{
-                        height:'90%',
-                        width:'auto'
-                    }}/>
+                <a className='cursor-pointer' href='/'>
+                    <Image
+                        src={logo}
+                        alt="Logo da Imobiliaria"
+                        style={{
+                            height:'90%',
+                            width:'auto'
+                        }}/>
+                </a>
             </div>
             <div className="basis-4/5">
                 <div className="flex h-full w-full items-center justify-end">
