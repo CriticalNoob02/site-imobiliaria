@@ -4,18 +4,18 @@ import CardServicesProps from './types';
 
 export default function CardServices({
     titles,
+    links,
     icons,
-    tag
 }:CardServicesProps) {
     return (
         <Col id='Services' height='h-[95vh]'>
             <div>
                 <Title
-                    title={tag}
+                    title={"Serviços"}
                 />
             </div>
             <Row height='h-full'>
-                <Cards3D titles={titles} icons={icons} />
+                <Cards3D titles={titles} links={links} icons={icons} />
             </Row>
         </Col>
     );

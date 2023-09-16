@@ -9,7 +9,7 @@ export default function HomeItems () {
     // CardServices;
     const titles = ['Quero fazer parte da equipe de corretores!','Quero comprar meu imovel novo com vocês!','Quero anunciar meu imovel com vocês!']
     const icons = [PiHandshake , PiKey, PiHouse]
-    const tag = 'Serviços'
+    const links = ["#444","#assd",'#assx']
     // ReviewCarousel
     const name = ['Adriel taradinho!', 'Crinha aleatório']
     const userAvatar = [asd, zzx]
@@ -23,7 +23,7 @@ export default function HomeItems () {
     return(
         <main>
             <CarouselBanner/>
-            <CardServices titles={titles} icons={icons} tag={tag}/>
+            <CardServices titles={titles} icons={icons} links={links}/>
             <PropertiesCard/>
             <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram userLogo={userLogo} images={images} time={time}/>
