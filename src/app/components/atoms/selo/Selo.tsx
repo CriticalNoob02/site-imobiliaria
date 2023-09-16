@@ -14,12 +14,12 @@ export default function Selo({
                 </a>
             </h1>
             <Image
-            src={selo}
-            alt="Selo"
-            style={{
-                height:'80%',
-                width:'auto'
-            }}/>
+                src={selo}
+                alt="Selo"
+                style={{
+                    height:'80%',
+                    width:'auto'
+                }}/>
         </div>
     )
 }
