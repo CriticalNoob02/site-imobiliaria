@@ -15,7 +15,7 @@ export default function Like ({
 
     return(
         <div
-            className={`w-full h-full flex items-center justify-center ${size} text-red-800 bg-slate-100 rounded-full drop-shadow-md`}
+            className={`w-full h-full flex items-center justify-center ${size} text-red-800 bg-slate-100 rounded-full drop-shadow-md cursor-pointer`}
             onClick={ToogleLike}
         >
             { like ? <PiHeart/> : <PiHeartFill/> }
