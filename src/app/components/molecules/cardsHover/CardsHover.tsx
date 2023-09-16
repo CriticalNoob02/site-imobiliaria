@@ -3,6 +3,7 @@ import CardsHoverProps from "./types"
 
 export default function CardsHover({
     images,
+    imagesCod,
     imageTitles,
     imageValues,
     imageTopics
@@ -14,6 +15,7 @@ export default function CardsHover({
                 <div className="w-80 h-96 mx-12 my-10" key={imageTitles[i]+i}>
                     <CardHover
                         image={image}
+                        imageCod={imagesCod[i]}
                         imageTitle={imageTitles[i]}
                         imageValue={imageValues[i]}
                         imageTopic={{

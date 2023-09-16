@@ -2,6 +2,7 @@ import { StaticImageData } from "next/dist/shared/lib/image-external";
 
 export default interface CardsHoverProps{
     images: Array<StaticImageData>;
+    imagesCod: Array<string>
     imageTitles: Array<string>;
     imageValues: Array<string>;
     imageTopics: Array<{
