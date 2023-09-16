@@ -1,5 +1,4 @@
-import { CardServices, PropertiesCard, ReviewCarousel, PostsInstagram } from "../../organisms"
-import CarouselBanner from "../../carouselBanner/CarouselBanner"
+import { CardServices, PropertiesCard, ReviewCarousel, PostsInstagram, CarouselBanner  } from "../../organisms"
 import { PiHandshake, PiKey, PiHouse } from "react-icons/pi"
 import asd from "../../../../../public/house.jpg"
 import zzx from "../../../../../public/sobrado.jpg"

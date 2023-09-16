@@ -5,6 +5,7 @@ import PostsInstagram from "./postsInstagram/PostsInstagram";
 import PropertiesCard from "./propertiesCard/PropertiesCard";
 import Footer from "./footer/Footer";
 import FormFilter from "./formFilter/FormFilter";
+import CarouselBanner from "./carouselBanner/CarouselBanner";
 
 export {
     Navbar,
@@ -14,4 +15,5 @@ export {
     PropertiesCard,
     Footer,
     FormFilter,
+    CarouselBanner,
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect,  } from 'react';
-import { Glass, ArrowButton, TextLink } from '../atoms';
+import { Glass, ArrowButton, TextLink } from '../../atoms';
 import CardBanner from './cardBanner/CardBanner';
 
 
@@ -26,6 +26,7 @@ export default function CarouselBanner() {
     useEffect(() => {
         const timer = setTimeout(() => increment(), 4000);
         return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [count,4]);
 
     const titles = ['Apartamento', 'Casa', 'Terreno', 'Sobrado'];
