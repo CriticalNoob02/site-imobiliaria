@@ -5,7 +5,7 @@ import BaseProps from './types';
  */
 export default function Base({ children }: BaseProps) {
     return (
-        <div className=" h-auto min-h-screen w-screen flex-col items-center">
+        <div className=" h-auto min-h-screen w-screen flex-col items-center bg-slate-100">
             {children}
         </div>
     );
