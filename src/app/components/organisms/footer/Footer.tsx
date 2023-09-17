@@ -15,7 +15,7 @@ export default function Footer({
 
     return(
         <Col  height="h-[30vh]" color="bg-slate-100 ">
-            <div className="h-full w-full flex flex-col items-center bg-red-700 rounded-t-[3rem] mt-10">
+            <div className="h-full w-full flex flex-col items-center bg-red-800 rounded-t-[3rem] mt-10">
                 <div className="h-[80%] w-full flex flex-row justify-around">
                     <div className="h-full w-1/3">
                         <Contacts
