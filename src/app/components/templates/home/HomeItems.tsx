@@ -9,7 +9,7 @@ export default function HomeItems () {
     // CardServices;
     const titles = ['Quero fazer parte da equipe de corretores!','Quero comprar meu imovel novo com vocês!','Quero anunciar meu imovel com vocês!']
     const icons = [PiHandshake , PiKey, PiHouse]
-    const links = ["#444","#assd",'#assx']
+    const links = ["/filter","#assd",'#assx']
     // ReviewCarousel
     const name = ['Adriel taradinho!', 'Crinha aleatório']
     const userAvatar = [asd, zzx]
