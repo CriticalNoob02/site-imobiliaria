@@ -11,14 +11,14 @@ export default function HomeItems () {
     const icons = [PiHandshake , PiKey, PiHouse]
     const links = ["/filter","#assd",'#assx']
     // ReviewCarousel
-    const name = ['Adriel taradinho!', 'Crinha aleatório']
-    const userAvatar = [asd, zzx]
-    const comment = ['fgndjngnfgfngngdfngngjfgfigfgn', 'o outro cara disse tudo!']
-    const rating = [5, 0]
+    const name = ['Adriel toloko', 'Crinha aleatório','PipipiPopopo']
+    const userAvatar = [asd, zzx, asd]
+    const comment = ['fgndjngnfgfngngdfngngjfgfigfgn', 'o outro cara disse tudo!','abiel']
+    const rating = [5, 0, 3]
     // PostInstagram
     const userLogo = logo
     const images = [logo,asd,zzx]
-    const time = '10s'
+    const time = '20s'
 
     return(
         <main>

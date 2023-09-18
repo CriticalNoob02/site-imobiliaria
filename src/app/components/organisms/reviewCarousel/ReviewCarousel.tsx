@@ -15,10 +15,10 @@ export default function ReviewCarousel({
     const [ count, setCount ] = useState(0)
 
     const increment = () => {
-        count == names.length ? null : setCount(+1)
+        count == names.length-1 ? setCount(0) : setCount(count+1);console.log(count)
     }
     const decrement = () => {
-        count == 0 ? null : setCount(-1)
+        count == 0 ? setCount(names.length-1) : setCount(count-1);console.log(count)
     }
 
     return(
@@ -27,7 +27,10 @@ export default function ReviewCarousel({
                 <Title title={"Avaliações"}/>
             </div>
             <div className={`w-full h-5/6 flex items-center justify-center flex-row flex-nowrap shrink-0 overflow-hidden`}>
-                <div className={`review${count} transition`}>
+                <div className={`transition`} 
+                style={{
+                    transform: `translateX(-${count * 100}%)`
+                }}>
                     <ReviewCard
                         name={names}
                         img={imgs}
