@@ -18,6 +18,7 @@ import Selo from "./selo/Selo";
 import Like from "./like/Like";
 import ImobTopics from "./imobTopics/ImobTopics";
 import CardHover from "./cardHover/CardHover";
+import FormSelect from "./formSelect/FormSelect";
 
 export {
     Avatar,
@@ -40,4 +41,5 @@ export {
     Like,
     ImobTopics,
     CardHover,
+    FormSelect,
 }
