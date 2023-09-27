@@ -6,6 +6,7 @@ import PostLayout from "./postLayout/PostLayout";
 import Contacts from "./contacts/Contacts"
 import CardsHover from "./cardsHover/CardsHover";
 import SocialBox from "./socialBox/SocialBox";
+import FilterCards from "./filterCards/FilterCards";
 
 export {
     MenuDropdown,
@@ -16,4 +17,5 @@ export {
     Contacts,
     CardsHover,
     SocialBox,
+    FilterCards,
 }

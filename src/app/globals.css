@@ -53,10 +53,18 @@
 .review3{
   transform: translateX(-300%);
 }
-.input-select {
-    all: unset;
-    position: absolute;
-    inset: 0;
-    cursor: pointer;
-    z-index: 20;
+@keyframes slides {
+  from {
+    transform: translateX(0);
   }
+  to {
+    transform: translateX(-600%);
+  }
+ }
+.selectCuston{
+  all:unset;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  z-index: 30;
+}
