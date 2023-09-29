@@ -12,6 +12,7 @@ export default function FilterItems () {
 
     return(
         <div className="h-auto w-screen">
+            <div className="h-[10vh]"></div>
             <FormFilter/>
             <FilterCards images={imagea} imagesCod={cods} imageTitles={titlesd} imageValues={abelfh} imageTopics={topics}/>
         </div>

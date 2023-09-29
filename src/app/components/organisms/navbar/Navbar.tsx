@@ -4,7 +4,7 @@ import { MenuDropdown, ButtonZap } from '../../molecules';
 
 export default function Navbar({titles, links, buttonTitle, buttonLink, logo}:NavbarProps) {
     return (
-        <div className="fixed z-40 flex h-20 w-screen justify-around bg-white/20 p-2 px-28 drop-shadow-xl backdrop-blur-sm">
+        <div className="fixed z-40 flex h-[10vh] w-screen justify-around bg-white/20 p-2 px-28 drop-shadow-xl backdrop-blur-sm">
             <div className="basis-1/5 overflow-hidden">
                 <a className='cursor-pointer' href='/'>
                     <Image
