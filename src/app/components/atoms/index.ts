@@ -19,6 +19,7 @@ import Like from "./like/Like";
 import ImobTopics from "./imobTopics/ImobTopics";
 import CardHover from "./cardHover/CardHover";
 import FormSelect from "./formSelect/FormSelect";
+import FormInput from "./formInput/FormInput";
 
 export {
     Avatar,
@@ -42,4 +43,5 @@ export {
     ImobTopics,
     CardHover,
     FormSelect,
+    FormInput,
 }
