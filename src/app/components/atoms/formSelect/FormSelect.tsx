@@ -6,11 +6,12 @@ import { PiArrowDown, PiArrowUp, PiCheckBold } from "react-icons/pi"
 
 export default function FormSelect({
     options,
-    typeLabel
+    typeLabel,
+    placeholder
 }:FormSelectProps) {
 
     const [selectStatus, setSelect] = useState(false)
-    const [selectedOption, setSelectedOption] = useState("Tipo de Imóvel")
+    const [selectedOption, setSelectedOption] = useState(placeholder)
 
     const toggleMode = () => {
         setSelect(!selectStatus)
@@ -31,7 +32,7 @@ export default function FormSelect({
                         {typeLabel}
                     </label>
 
-                    <div className={`bg-slate-100 relative backdrop-blur-md drop-shadow-md flex flex-row items-center justify-between tracking-wide mt-2 p-4 rounded-lg ${selectStatus ? 'outline-1 outline-red-600' : ''}`}>
+                    <div className={`bg-slate-100 relative backdrop-blur-md drop-shadow-md flex flex-row items-center justify-between tracking-wide mt-2 p-4 rounded-lg  ${selectStatus ? 'outline-1 outline-red-600' : ''}`}>
                         <div id="select-button">{selectedOption}</div>
                         <div className={`flex flex-row`}>
                             <PiArrowDown className={`${selectStatus ? 'visible' : 'hidden'}`} />
