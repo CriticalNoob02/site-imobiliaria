@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+::-webkit-scrollbar-track-piece {
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef4444;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b91c1c;
+  border-radius: 20px;
+}
+
 .transitionPath {
   transition:
     stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
