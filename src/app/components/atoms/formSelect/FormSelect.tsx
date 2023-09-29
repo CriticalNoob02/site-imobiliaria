@@ -40,7 +40,7 @@ export default function FormSelect({
                     </div>
                 </div>
 
-                <ul className={`bg-slate-100 absolute w-full backdrop-blur-md drop-shadow-2xl rounded-lg my-2 font-medium ${selectStatus ? 'visible' : 'hidden'}`}>
+                <ul className={`bg-slate-100 absolute w-full max-h-48 overflow-y-auto backdrop-blur-md drop-shadow-2xl rounded-lg my-2 font-medium ${selectStatus ? 'visible' : 'hidden'}`}>
                     {options.map((option, i) => (
                         <li key={option + i} className='flex flex-row items-center justify-between p-4 border-b border-black/10 hover:bg-red-800/80 relative focus:border-2' style={{ width: '100%' }}>
                             <input id={option} type='radio' name='category' value={option} className='peer selectCuston' onChange={handleOptionChange} />
