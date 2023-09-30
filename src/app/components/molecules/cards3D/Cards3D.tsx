@@ -14,7 +14,7 @@ export default function Cards3D ({
                     key={title}
                     color="bg-red-800"
                 >
-                    <a className="cursor-pointer" href={`${links[i]}`}>
+                    <a className="cursor-pointer" rel="preload" href={`${links[i]}`}>
                         <div className="relative flex h-full w-full flex-col items-center rounded transition">
                             <IconContainer hover='group-hover:scale-110 group-hover:drop-shadow-lg'>
                                 {createElement(icons[i])}
