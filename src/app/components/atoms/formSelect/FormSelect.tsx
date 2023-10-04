@@ -35,7 +35,7 @@ export default function FormSelect({
                     </label>
 
                     <div className={`bg-slate-100 relative backdrop-blur-md drop-shadow-md flex flex-row items-center justify-between tracking-wide mt-2 p-4 rounded-lg  ${selectStatus ? 'outline-1 outline-red-600' : ''}`}>
-                    <input defaultValue={selectOption}/>
+                    <input defaultValue={selectOption} className='select-none bg-slate-100'/>
                         <div className={`flex flex-row`}>
                             <PiArrowDown className={`${selectStatus ? 'visible' : 'hidden'}`} />
                             <PiArrowUp className={`${selectStatus ? 'hidden' : 'visible'}`}/>
