@@ -11,7 +11,7 @@ export default function CardHover({
 }:CardHoverProps) {
     return(
         <div className="w-full h-full rounded-lg drop-shadow-2xl border-8 border-slate-100 bg-slate-100 mx-8 relative overflow-hidden">
-            <a className="cursor-pointer" href={`${imageCod}`}>
+            <a className="cursor-pointer select-none" href={`${imageCod}`}>
                 <Image
                     src={image}
                     alt="Imagem de um imóvel"
