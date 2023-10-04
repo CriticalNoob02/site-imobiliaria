@@ -43,23 +43,23 @@ export default function FormFilter() {
       }
 
     return(
-        <Col height="h-[80vh]" color="bg-red-800">
+        <Col height="h-[70vh]" color="bg-red-800">
                 <div className="flex flex-row items-end justify-center flex-wrap">
                     <div className="m-8 flex-grow select-none">
-                        <FormInput label={inputText} onChange={handleChange}/>
+                        <FormInput label={label} onChange={handleChange}/>
                     </div>
                     <div className="m-8 flex-grow select-none">
-                        <FormSelect options={arrayaa} typeLabel={optionValue} placeholder={placeholder} onChange={handleOption}/>
+                        <FormSelect options={arrayaa} typeLabel={title} placeholder={placeholder} onChange={handleOption}/>
                     </div>
                     <div className="m-8 flex-grow select-none">
-                        <FormSelect options={arrayaa2} typeLabel={optionValue2} placeholder={placeholder2} onChange={handleOption2}/>
+                        <FormSelect options={arrayaa2} typeLabel={title2} placeholder={placeholder2} onChange={handleOption2}/>
                     </div>
                     <div className="m-8 flex-grow select-none">
-                        <FormSelect options={arrayaa3} typeLabel={optionValue3} placeholder={placeholder3} onChange={handleOption3}/>
+                        <FormSelect options={arrayaa3} typeLabel={title3} placeholder={placeholder3} onChange={handleOption3}/>
                     </div>
                     <div className="m-8 flex-grow select-none">
-                        <button type="submit" className="flex font-bold text-lg drop-shadow-md select-none items-center justify-center rounded-lg text-slate-100 bg-red-600 py-4 px-8 ring-red-600 ring-2 hover:bg-slate-100 hover:text-red-600 transition hover:-translate-y-0.5 ">
-                            Buscar !
+                        <button type="submit" className="flex font-bold text-lg drop-shadow-md select-none items-center justify-center rounded-lg text-slate-100 bg-red-600 py-4 px-10 ring-red-600 ring-2 hover:bg-slate-100 hover:text-red-600 transition hover:-translate-y-0.5 ">
+                            Buscar
                         </button>
                     </div>
                 </div>
