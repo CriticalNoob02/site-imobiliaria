@@ -11,12 +11,6 @@ const config: Config = {
             animation: {
                 'Slides': 'slides 25s linear infinite'
             },
-            keyframes: {
-                slides: {
-                    'from': { transform: 'translateX(0)' },
-                    'to': { transform: 'translateX(-600%)' }
-                }
-            },
         },
     },
     plugins: [],
