@@ -1,14 +1,20 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
+import propertiesCardProps from "./types";
 import { useRef, useState, useEffect } from "react"
 import { Col, Title } from "../../atoms"
 import { CardsHover } from "../../molecules"
 import { motion } from "framer-motion"
 import { PiArrowFatLinesRight } from "react-icons/pi";
-import pics from "../../../../../public/sobrado.jpg"
 
-export default function PropertiesCard () {
+export default function PropertiesCard ({
+    images,
+    imagesCod,
+    imageTitles, 
+    imageValues, 
+    imageTopics
+}:propertiesCardProps) {
 
     const cardsBox = useRef<HTMLDivElement>(null);
 
@@ -24,13 +30,6 @@ export default function PropertiesCard () {
         setDrag(newsDrag)
     },[])
 
-
-    const images = [pics,pics,pics,pics,pics,pics]
-    const cod = ['#22','#33','#erd','#345','#5467','#3434']
-    const titles = ['casa','abelha', 'casa','abelha','jonas','outro']
-    const values = ['1000','2000','50000','50000','100','32323']
-    const topics = [{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4}]
-
     return(
         <Col height="h-[85vh]">
             <div className="w-full h-1/5">
@@ -40,10 +39,10 @@ export default function PropertiesCard () {
                 <motion.div ref={cardsBox} drag="x" dragConstraints={dragConstraints} className="cursor-grab active:cursor-grabbing">
                     <CardsHover
                         images={images}
-                        imagesCod={cod}
-                        imageTitles={titles}
-                        imageValues={values}
-                        imageTopics={topics}
+                        imagesCod={imagesCod}
+                        imageTitles={imageTitles}
+                        imageValues={imageValues}
+                        imageTopics={imageTopics}
                     />
                 </motion.div>
                 <div className="absolute right-0 bottom-0  px-20 pb-10 text-slate-100 text-5xl">

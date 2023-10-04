@@ -19,12 +19,19 @@ export default function HomeItems () {
     const userLogo = logo
     const images = [logo,asd,zzx]
     const time = '20s'
+    // PropertiesCards 
+    const images2 = [asd,zzx,asd,asd,zzx,asd]
+    const cod = ['#22','#33','#erd','#345','#5467','#3434']
+    const titles2 = ['casa','abelha', 'casa','abelha','jonas','outro']
+    const values = ['1000','2000','50000','50000','100','32323']
+    const topics = [{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4},{bedrooms:2,groundSize: 10,garages: 2,showers: 4}]
+
 
     return(
         <main>
             <CarouselBanner/>
             <CardServices titles={titles} icons={icons} links={links}/>
-            <PropertiesCard/>
+            <PropertiesCard images={images2} imagesCod={cod} imageTitles={titles2} imageValues={values} imageTopics={topics}/>
             <ReviewCarousel names={name} imgs={userAvatar} comments={comment} ratings={rating}/>
             <PostsInstagram userLogo={userLogo} images={images} time={time}/>
         </main>
