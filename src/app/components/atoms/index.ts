@@ -20,6 +20,8 @@ import ImobTopics from "./imobTopics/ImobTopics";
 import CardHover from "./cardHover/CardHover";
 import FormSelect from "./formSelect/FormSelect";
 import FormInput from "./formInput/FormInput";
+import SingleFrame from "./singleFrame/singleFrame";
+import DoubleFrame from "./doubleFrame/DoubleFrame";
 
 export {
     Avatar,
@@ -44,4 +46,6 @@ export {
     CardHover,
     FormSelect,
     FormInput,
+    SingleFrame,
+    DoubleFrame,
 }
