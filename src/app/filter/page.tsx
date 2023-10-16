@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: 'Filtros',
 };
 
-export default function Home() {
+export default function Filter() {
 
     return (
         <main>
