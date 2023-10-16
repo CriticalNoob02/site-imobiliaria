@@ -12,19 +12,19 @@ export default function Contacts({
                 Fale conosco
             </h1>
             <div className="text-start font-extralight text-slate-100 tracking-wide leading-loose drop-shadow-md text-xl">
-                <p className="cursor-pointer hover:text-black flex flex-row items-center">
+                <p className="cursor-pointer hover:text-black flex flex-row items-center selection:bg-emerald-500">
                     <PiEnvelopeSimple/>
                     <a href={email[1]} target="_blank">
                         &nbsp;{email[0]}
                     </a>
                 </p>
-                <p className="cursor-pointer hover:text-black flex flex-row items-center">
+                <p className="cursor-pointer hover:text-black flex flex-row items-center selection:bg-emerald-500">
                     <PiMapPin/>
                     <a href={localization[1]} target="_blank">
                     &nbsp;{localization[0]}
                     </a>
                 </p>
-                <p className="cursor-pointer hover:text-black flex flex-row items-center">
+                <p className="cursor-pointer hover:text-black flex flex-row items-center selection:bg-emerald-500">
                     <PiPhone/>
                     <a href={phone[1]} target="_blank">
                     &nbsp;{phone[0]}

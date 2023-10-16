@@ -29,9 +29,9 @@ export default function Footer({
                             <SocialBox instagram={instagram} facebook={facebook}/>
                         </div>
                         <div className="w-full h-3/4 pl-28 pt-4 text-slate-100 flex flex-col items-end text-end font-extralight ">
-                            <h1 className="py-1"><b className="select-none">RAZÃO SOCIAL:</b> {razaoSocial}</h1>
-                            <h1 className="py-1"><b className="select-none">CRECI:</b> {creci}</h1>
-                            <h1 className="py-1"><b className="select-none">CNPJ:</b> {cnpj}</h1>
+                            <h1 className="py-1 selection:bg-emerald-500"><b className="select-none">RAZÃO SOCIAL:</b> {razaoSocial}</h1>
+                            <h1 className="py-1 selection:bg-emerald-500"><b className="select-none">CRECI:</b> {creci}</h1>
+                            <h1 className="py-1 selection:bg-emerald-500"><b className="select-none">CNPJ:</b> {cnpj}</h1>
                         </div>
                     </div>
                 </div>
