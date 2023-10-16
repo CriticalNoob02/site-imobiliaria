@@ -6,6 +6,7 @@ import PropertiesCard from "./propertiesCard/PropertiesCard";
 import Footer from "./footer/Footer";
 import FormFilter from "./formFilter/FormFilter";
 import CarouselBanner from "./carouselBanner/CarouselBanner";
+import ImobiDescription from "./imobiDescription/ImobiDescription";
 
 export {
     Navbar,
@@ -16,4 +17,5 @@ export {
     Footer,
     FormFilter,
     CarouselBanner,
+    ImobiDescription,
 }
