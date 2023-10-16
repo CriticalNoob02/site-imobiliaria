@@ -22,6 +22,7 @@ import FormSelect from "./formSelect/FormSelect";
 import FormInput from "./formInput/FormInput";
 import SingleFrame from "./singleFrame/singleFrame";
 import DoubleFrame from "./doubleFrame/DoubleFrame";
+import IconSticker from "./iconSticker/IconSticker";
 
 export {
     Avatar,
@@ -48,4 +49,5 @@ export {
     FormInput,
     SingleFrame,
     DoubleFrame,
+    IconSticker,
 }
